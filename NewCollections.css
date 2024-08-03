@@ -1,0 +1,95 @@
+.newcollections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+.newcollections h1{
+    color: #171717;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+.newcollections hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+
+
+.collections{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 60px;
+    gap: 60px;
+}
+
+.collections .item img {
+    width: 250px !important; /* Ensure images take up the full width of their container */
+    height: 300px; /* Allow the height to adjust according to the width */
+    /*max-height: 200px;  /*Set maximum height for each image */
+    /* You can add additional styling as needed for the image */
+  }
+
+@media (max-width: 1280px) {
+    .newcollections h1{
+        font-size: 40px;
+    }
+
+    .newcollections hr{
+        width: 160px;
+        height: 4px;
+    }
+
+    .collections{
+        gap: 60px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .newcollections h1{
+        font-size: 30px;
+    }
+
+    .newcollections hr{
+        width: 120px;
+        height: 3px;
+    }
+
+    .collections{
+        gap: 15px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .newcollections{
+        gap: 6px;
+    }
+
+    .newcollections h1{
+        font-size: 20px;
+    }
+
+    .newcollections hr{
+        width: 100px;
+    }
+
+    .collections{
+        gap: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+    .collections{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+} 
